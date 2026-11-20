@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Huzaifa Irfan | Web Developer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-box">
+        <a class="logo" href="#home">Huzaifa</a>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="hero" id="home">
+      <div class="container hero-box">
+        <div class="hero-text">
+          <p class="hello">Hi, I'm</p>
+          <h1>Huzaifa Irfan</h1>
+          <p class="role">
+            Web development student on the way to becoming a backend developer.
+          </p>
+          <a class="btn btn-fill" href="#projects">See my work</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+
+        <div class="photo-box">
+          <img src="my-photo.jpeg" alt="Huzaifa Irfan" />
+        </div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="container">
+        <h2>About me</h2>
+        <div class="about-box">
+          <div class="about-text">
+            <p>
+              I'm a web development student. I have finished HTML and CSS, and
+              I'm now learning JavaScript.
+            </p>
+            <p>
+              My goal is to become a backend developer: building the servers,
+              databases and APIs that power websites and apps.
+            </p>
+            <p>
+              I learn by building, so every assignment I finish goes on this
+              page.
+            </p>
+          </div>
+          <div class="stats">
+            <div class="stat"><b>HTML</b><span>Finished</span></div>
+            <div class="stat"><b>CSS</b><span>Finished</span></div>
+            <div class="stat"><b>JavaScript</b><span>Learning now</span></div>
+            <div class="stat"><b>Backend</b><span>My goal</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="dark">
+      <div class="container">
+        <h2>My skills</h2>
+
+        <div class="skill">
+          <div class="skill-top">HTML <span>Finished</span></div>
+          <div class="bar"><div class="fill w100"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">CSS <span>Finished</span></div>
+          <div class="bar"><div class="fill w100"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">JavaScript <span>Just started</span></div>
+          <div class="bar"><div class="fill w30"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">Backend <span>Coming next</span></div>
+          <div class="bar"><div class="fill w5"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap">
+      <div class="container">
+        <h2>My learning roadmap</h2>
+        <ul class="roadmap">
+          <li class="done">
+            <h3>HTML <span class="status">Done</span></h3>
+            <p>Page structure, tags, forms and links.</p>
+          </li>
+          <li class="done">
+            <h3>CSS <span class="status">Done</span></h3>
+            <p>Layout with Flexbox and responsive design for phones.</p>
+          </li>
+          <li class="now">
+            <h3>JavaScript <span class="status">Learning now</span></h3>
+            <p>Variables, functions, the DOM and events.</p>
+          </li>
+          <li>
+            <h3>Backend basics <span class="status">Next</span></h3>
+            <p>Servers, APIs and databases.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="dark">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Assignment 1</h3>
+            <p>Write one line here about what you built.</p>
+            <span class="tag">HTML</span><span class="tag">CSS</span>
+            <a class="view" href="assignment1/index.html">View project</a>
+          </div>
+          <div class="card">
+            <h3>Assignment 2</h3>
+            <p>Write one line here about what you built.</p>
+            <span class="tag">HTML</span><span class="tag">CSS</span>
+            <a class="view" href="assignment2/index.html">View project</a>
+          </div>
+          <div class="card">
+            <h3>Assignment 3</h3>
+            <p>Write one line here about what you built.</p>
+            <span class="tag">HTML</span><span class="tag">CSS</span>
+            <a class="view" href="assignment3/index.html">View project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <h2>Let's talk</h2>
+          <p>
+            Looking for a student developer, an internship or a study partner?
+            Send me a message.
+          </p>
+          <a class="btn btn-fill" href="#form">Email me</a>
+
+          <div class="form-box" id="form">
+            <form action="#done" method="get">
+              <input type="text" name="name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Your message"
+                required
+              ></textarea>
+              <button type="submit">Send message</button>
+            </form>
+          </div>
+
+          <div class="done-box" id="done">
+            <p class="done-text">Done 👍</p>
+            <p>Thank you! Your message has been sent.</p>
+            <a class="btn" href="#contact">Close</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Huzaifa Irfan</p>
+    </footer>
+  </body>
+</html>
